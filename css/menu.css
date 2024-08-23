@@ -1,0 +1,55 @@
+nav {
+    display: inline-block;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid;
+    position: relative;
+    height: calc(100% - 16px);
+    width: 20%;
+    transform: translateX(-98%);
+    position: fixed;
+}
+
+body {
+    margin: 0px;
+    padding: 8px;
+}
+
+#mainMenu {
+    margin: 0px;
+    height: 100%;
+    list-style: none;
+    padding-left: 0px;
+    font-size: 30px;
+}
+
+.menuOne {
+    margin: 5%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+
+.menuOne:hover {
+    border-top: 1px solid;
+    color: rgb(255, 140, 0);
+}
+
+#menuBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    height: 500px;
+    margin-top: -250px;
+    border-radius: 0 15px 15px 0;
+    background-color: rgb(255, 140, 0, 0.8);
+}
+
+nav:hover {
+    transform: translateX(calc(var(--nav-width)));
+    transition: 1s;
+}
+
+#menuBar {
+    z-index: 10;
+}
